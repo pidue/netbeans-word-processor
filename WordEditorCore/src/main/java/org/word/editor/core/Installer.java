@@ -18,7 +18,7 @@ public class Installer extends ModuleInstall {
 
     @Override
     public boolean closing() {
-        super.closing();
+        return super.closing();
     }
 
     @Override
