@@ -27,7 +27,6 @@ public class ApplicationTest extends NbTestCase {
         new ActionNoBlock("Help|About", null).performMenu();
         new NbDialogOperator("About").closeByButton();
          */
-        throw new RuntimeException();
     }
 
 }
