@@ -18,16 +18,7 @@ public class Installer extends ModuleInstall {
 
     @Override
     public boolean closing() {
-        NotifyDescriptor d = new NotifyDescriptor.Confirmation(
-                "Do you really want to exit the application?",
-                "Exit",
-                NotifyDescriptor.YES_NO_OPTION);
-        if (DialogDisplayer.getDefault().notify(d) == NotifyDescriptor.YES_OPTION) {
-            return true;
-        } else {
-            return false;
-        }
-
+        super.closing();
     }
 
     @Override
